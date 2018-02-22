@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <title>ITMD-361 Lab 4 - Joshua Linus</title>
+  </head>
+
+  <body>
+    <h1><strong>Volunteer Form<strong></h1>
+    <h3>My Info</h3>
+    <form action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method = "post">
+      <fieldset>
+      <div>
+      <label>First Name:<input type = "text" name = "first_name_field"></label>
+      </div>
+      <div>
+      <label>Last Name:<input type = "text" name = "last_name_field"></label>
+      </div>
+      <div>
+      <label>Phone Number:<input type = "text" name = "phone_field"></label>
+      </div>
+      <div>
+      <label>Email Address:<input type = "text" name = "email_field"></label>
+      </div>
+
+      <label>Gender:</label>
+        <label for = "male">Male</label>
+        <input type = "radio" name = "gender_field" id = "male" value = "Male">
+        <label for = "female">Female</label>
+        <input type = "radio" name = "gender_field" id = "female" value = "Female"><br>
+
+
+      <label>Age:
+        <select name = "age_field">
+            <option value = "under 18">under 18</option>
+            <option value = "18-24">18-24</option>
+            <option value = "25-34">25-34</option>
+            <option value = "35-44">35-44</option>
+            <option value = "45-54">45-54</option>
+            <option value = "55-64">55-64</option>
+            <option value = "65 and over">65 and over</option>
+        </select>
+      </label>
+      </fieldset>
+
+    <h3>My Availability</h3>
+      <fieldset>
+      <label>Days Available:</label><br>
+
+        <label for = "sunday">Sunday</label>
+        <input type = "checkbox" name = "available_field[]" id = "sunday" value = "Sunday"/><br>
+
+        <label for = "monday">Monday</label>
+        <input type = "checkbox" name = "available_field[]" id = "monday" value = "Monday"/><br>
+
+        <label for = "tuesday">Tuesday</label>
+        <input type = "checkbox" name = "available_field[]" id = "tuesday" value = "Tuesday"/><br>
+
+        <label for = "wednesday">Wednesday</label>
+        <input type = "checkbox" name = "available_field[]" id = "wednesday" value = "Wednesday"/><br>
+
+        <label for = "thursday">Thursday</label>
+        <input type = "checkbox" name = "available_field[]" id = "thursday" value = "Thursday"/><br>
+
+        <label for = "friday">Friday</label>
+        <input type = "checkbox" name = "available_field[]" id = "friday" value = "Friday"/><br>
+
+        <label for = "saturday">Saturday</label>
+        <input type = "checkbox" name = "available_field[]" id = "saturday" value = "Saturday"/><br>
+
+      <label>Any Comments?</label><br>
+      <textarea name = "comments_field"></textarea>
+
+     </fieldset>
+     <input type = "hidden" name = "hidden_field" value = "jlinus">
+     <input type = "submit" value = "I'm Done!">
+
+     </form>
+
+  </body>
+
+  </html>
